@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetrePrincipale</class>
+ <widget class="QMainWindow" name="FenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau_Cryptage"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuiter"/>
+   </widget>
+   <widget class="QMenu" name="menuOutils">
+    <property name="title">
+     <string>Outils</string>
+    </property>
+    <addaction name="actionParam_trage_de_la_Table"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Affichage</string>
+    </property>
+    <widget class="QMenu" name="menuFen_tres">
+     <property name="title">
+      <string>Fenêtres</string>
+     </property>
+     <addaction name="actionMessage_Clair"/>
+     <addaction name="actionMessage_Cipher"/>
+     <addaction name="actionParam_trage"/>
+    </widget>
+    <addaction name="menuFen_tres"/>
+    <addaction name="separator"/>
+    <addaction name="actionAfficher_la_table"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="action_propos"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuOutils"/>
+   <addaction name="menuAffichage"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNouveau_Cryptage">
+   <property name="text">
+    <string>Nouveau </string>
+   </property>
+  </action>
+  <action name="actionQuiter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionParam_trage_de_la_Table">
+   <property name="text">
+    <string>Paramétrage de la Table</string>
+   </property>
+  </action>
+  <action name="actionMessage_Clair">
+   <property name="text">
+    <string>Texte Clair</string>
+   </property>
+  </action>
+  <action name="actionMessage_Cipher">
+   <property name="text">
+    <string>Texte Chiffré</string>
+   </property>
+  </action>
+  <action name="actionParam_trage">
+   <property name="text">
+    <string>Paramétrage</string>
+   </property>
+  </action>
+  <action name="action_propos">
+   <property name="text">
+    <string>À propos</string>
+   </property>
+  </action>
+  <action name="actionAfficher_la_table">
+   <property name="text">
+    <string>Afficher la table</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
